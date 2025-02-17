@@ -6,5 +6,76 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: hsl(0, 0%, 8%);
+  --container-color: hsl(0, 0%, 12%);
+  --link-boxes: hsl(0, 0%, 20%);
+  --green-text: hsl(75, 94%, 57%);
+}
+
 body {
+  background: var(--background-color);
+  font-size: 14px;
+  font-family: "Inter", serif;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  background-color: var(--container-color);
+  width: 350px;
+  height: 550px;
+  border-radius: 10px;
+  padding: 2rem 0;
+}
+
+.container img {
+  width: 75px;
+  border-radius: 50%;
+}
+.container h2 {
+  font-weight: 600;
+  padding: 8px;
+}
+
+.container h4 {
+  font-weight: 600;
+  color: var(--green-text);
+  margin-bottom: 0.75rem;
+}
+
+.container p {
+  padding: 1rem 0;
+}
+
+.social-links li {
+  list-style: none;
+  font-weight: 700;
+  width: 300px;
+  margin: 0 auto;
+  background-color: var(--link-boxes);
+  border-radius: 0.5rem;
+}
+
+.social-links a:hover {
+  color: var(--background-color);
+  background: var(--green-text);
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin: 1rem auto;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.attribution {
+  margin-top: 1rem;
 }
